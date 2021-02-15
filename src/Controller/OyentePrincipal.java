@@ -17,14 +17,14 @@ public class OyentePrincipal implements ActionListener{
     GUIPrincipal guiPrincipal;
     Principal p;
     JButton boton1, boton2, boton3;
-    JTextArea jTextArea1;
+    JTextField jTextField1;
 
-    public OyentePrincipal(GUIPrincipal guiPrincipal, JButton boton1, JButton boton2, JButton boton3, JTextArea jTextArea1) {
+    public OyentePrincipal(GUIPrincipal guiPrincipal, JButton boton1, JButton boton2, JButton boton3, JTextField jTextField1) {
         this.guiPrincipal = guiPrincipal;
         this.boton1 = boton1;
         this.boton2 = boton2;
         this.boton3 = boton3;
-        this.jTextArea1 = jTextArea1;
+        this.jTextField1 = jTextField1;
     }
 
     @Override
@@ -32,7 +32,7 @@ public class OyentePrincipal implements ActionListener{
         Object botonPresionado = ae.getSource();
         if(botonPresionado == boton1){
             p = new Principal();
-            jTextArea1.setText(p.toString());
+            jTextField1.setText(p.toString());
         }
         if(botonPresionado == boton2){
             System.exit(0);
