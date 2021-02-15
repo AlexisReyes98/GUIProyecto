@@ -23,7 +23,8 @@ public class Principal {
 
     @Override
     public String toString() {
-        return "Estado de alarma alarma =" + alarma;
+        alarma = true;
+        return "Estado de alarma alarma = "+alarma;
     }
     
 }

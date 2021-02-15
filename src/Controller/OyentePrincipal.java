@@ -27,13 +27,13 @@ public class OyentePrincipal implements ActionListener{
     public void actionPerformed(ActionEvent ae) {
         Object botonPresionado = ae.getSource();
         if(botonPresionado == boton1){
-            new GUIRecomendaciones().setVisible(true);
+           
         }
         if(botonPresionado == boton2){
-            
+            System.exit(0);
         }
         if(botonPresionado == boton3){
-            
+             new GUIRecomendaciones().setVisible(true);
         }
     }
     

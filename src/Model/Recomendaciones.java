@@ -22,7 +22,8 @@ public class Recomendaciones {
 
     @Override
     public String toString() {
-        return "Recomendaciones{" + "recomendaciones=" + recomendaciones + '}';
+        recomendaciones = "Las recomendaciones se daran en otra ventana :)";
+        return recomendaciones;
     }
     
 }
