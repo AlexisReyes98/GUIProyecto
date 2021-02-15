@@ -1,9 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package View;
+
+import Controller.*;
 
 /**
  *
@@ -14,8 +12,16 @@ public class GUIRecomendaciones extends javax.swing.JFrame {
     /**
      * Creates new form GUIRecomendaciones
      */
+    
+    OyenteReco ORecomendaciones;
+    
     public GUIRecomendaciones() {
         initComponents();
+        ORecomendaciones = new OyenteReco(this, jButton1, jButton2, jButton3);
+        
+        jButton1.addActionListener(ORecomendaciones);
+        jButton2.addActionListener(ORecomendaciones);
+        jButton3.addActionListener(ORecomendaciones);
     }
 
     /**
@@ -27,18 +33,24 @@ public class GUIRecomendaciones extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setBackground(new java.awt.Color(0, 255, 204));
+        jButton1.setText("Escuchar recomendaciones");
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(116, 55, -1, -1));
+
+        jButton2.setBackground(new java.awt.Color(51, 255, 51));
+        jButton2.setText("Ver recomendaciones");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(116, 130, -1, -1));
+
+        jButton3.setBackground(new java.awt.Color(255, 51, 51));
+        jButton3.setText("Cerrar");
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(116, 203, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -79,5 +91,8 @@ public class GUIRecomendaciones extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     // End of variables declaration//GEN-END:variables
 }

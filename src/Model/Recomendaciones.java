@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Model;
 
 /**
@@ -10,5 +6,23 @@ package Model;
  * @author giova
  */
 public class Recomendaciones {
+     private String recomendaciones;
+
+    public Recomendaciones(String recomendaciones) {
+        this.recomendaciones = recomendaciones;
+    }
+
+    public String getRecomendaciones() {
+        return recomendaciones;
+    }
+
+    public void setRecomendaciones(String recomendaciones) {
+        this.recomendaciones = recomendaciones;
+    }
+
+    @Override
+    public String toString() {
+        return "Recomendaciones{" + "recomendaciones=" + recomendaciones + '}';
+    }
     
 }

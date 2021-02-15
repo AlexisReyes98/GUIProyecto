@@ -1,9 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package View;
+
+import Controller.*;
 
 /**
  *
@@ -14,8 +12,16 @@ public class GUIPrincipal extends javax.swing.JFrame {
     /**
      * Creates new form GUIPrincipal
      */
+    
+    OyentePrincipal OPrincipal;
+    
     public GUIPrincipal() {
         initComponents();
+        OPrincipal = new OyentePrincipal(this, jButton1, jButton2, jButton3);
+        
+        jButton1.addActionListener(OPrincipal);
+        jButton2.addActionListener(OPrincipal);
+        jButton3.addActionListener(OPrincipal);
     }
 
     /**
@@ -27,18 +33,28 @@ public class GUIPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setBackground(new java.awt.Color(51, 204, 0));
+        jButton1.setText("Activar");
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 100, -1, -1));
+
+        jButton2.setBackground(new java.awt.Color(255, 51, 51));
+        jButton2.setText("Salir");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, 70, 30));
+
+        jButton3.setBackground(new java.awt.Color(255, 0, 204));
+        jButton3.setText("Ayuda");
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 240, 70, -1));
+
+        jLabel1.setText("***                                        Desea activar el detector                                           ***");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 420, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -79,5 +95,9 @@ public class GUIPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
