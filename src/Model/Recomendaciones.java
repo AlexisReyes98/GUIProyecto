@@ -6,7 +6,10 @@ package Model;
  * @author giova
  */
 public class Recomendaciones {
-     private String recomendaciones;
+    private String recomendaciones;
+
+    public Recomendaciones() {
+    } 
 
     public Recomendaciones(String recomendaciones) {
         this.recomendaciones = recomendaciones;
@@ -22,7 +25,7 @@ public class Recomendaciones {
 
     @Override
     public String toString() {
-        recomendaciones = "Las recomendaciones se daran en otra ventana :)";
+        recomendaciones = "Las recomendaciones estaran \ndisponible con el proyecto \nterminado :)";
         return recomendaciones;
     }
     

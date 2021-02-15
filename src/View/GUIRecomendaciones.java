@@ -17,7 +17,7 @@ public class GUIRecomendaciones extends javax.swing.JFrame {
     
     public GUIRecomendaciones() {
         initComponents();
-        ORecomendaciones = new OyenteReco(this, jButton1, jButton2, jButton3);
+        ORecomendaciones = new OyenteReco(this, jButton1, jButton2, jButton3, jTextArea1);
         
         jButton1.addActionListener(ORecomendaciones);
         jButton2.addActionListener(ORecomendaciones);
@@ -36,6 +36,8 @@ public class GUIRecomendaciones extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -51,6 +53,12 @@ public class GUIRecomendaciones extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(255, 51, 51));
         jButton3.setText("Cerrar");
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(116, 203, -1, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 110, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -94,5 +102,7 @@ public class GUIRecomendaciones extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }

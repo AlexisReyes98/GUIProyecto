@@ -20,10 +20,9 @@ public class Principal {
     public void setAlarma(boolean alarma) {
         this.alarma = alarma;
     }
-
+    
     @Override
     public String toString() {
-        alarma = true;
         return "Estado de alarma alarma = "+alarma;
     }
     

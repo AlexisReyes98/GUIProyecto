@@ -17,7 +17,7 @@ public class GUIPrincipal extends javax.swing.JFrame {
     
     public GUIPrincipal() {
         initComponents();
-        OPrincipal = new OyentePrincipal(this, jButton1, jButton2, jButton3);
+        OPrincipal = new OyentePrincipal(this, jButton1, jButton2, jButton3, jTextArea1);
         
         jButton1.addActionListener(OPrincipal);
         jButton2.addActionListener(OPrincipal);
@@ -62,7 +62,7 @@ public class GUIPrincipal extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, -1));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
