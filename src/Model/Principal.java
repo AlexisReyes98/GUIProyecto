@@ -7,23 +7,27 @@ package Model;
  */
 public class Principal {
     
-    private boolean alarma;
-    
-    public Principal(boolean alarma) {
+    private String alarma;
+
+    public Principal() {
+    }
+
+    public Principal(String alarma) {
         this.alarma = alarma;
     }
 
-    public boolean isAlarma() {
+    public String getAlarma() {
         return alarma;
     }
 
-    public void setAlarma(boolean alarma) {
+    public void setAlarma(String alarma) {
         this.alarma = alarma;
     }
     
     @Override
     public String toString() {
-        return "Estado de alarma alarma = "+alarma;
+        alarma = "Activada";
+        return alarma;
     }
     
 }

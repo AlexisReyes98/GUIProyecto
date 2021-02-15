@@ -31,7 +31,7 @@ public class OyentePrincipal implements ActionListener{
     public void actionPerformed(ActionEvent ae) {
         Object botonPresionado = ae.getSource();
         if(botonPresionado == boton1){
-            p = new Principal(true);
+            p = new Principal();
             jTextArea1.setText(p.toString());
         }
         if(botonPresionado == boton2){
