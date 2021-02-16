@@ -19,7 +19,8 @@ public class OyenteReco implements ActionListener{
     JButton boton1, boton2, boton3;
     JTextArea jTextArea1;
 
-    public OyenteReco(GUIRecomendaciones guiRecomnendaciones, JButton boton1, JButton boton2, JButton boton3, JTextArea jTextArea1) {
+    public OyenteReco(GUIRecomendaciones guiRecomnendaciones, JButton boton1, JButton boton2, JButton boton3,
+            JTextArea jTextArea1) {
         this.guiRecomnendaciones = guiRecomnendaciones;
         this.boton1 = boton1;
         this.boton2 = boton2;

@@ -18,7 +18,8 @@ public class GUIPrincipal extends javax.swing.JFrame {
     public GUIPrincipal() {
         initComponents();
         OPrincipal = new OyentePrincipal(this, jButton1, jButton2, jButton3, jTextField1);
-        
+        //EL OBJETO "OPrincipal" ES REGISTRADO COMO OYENTE DE LOS TRES BOTONES
+        //QUE GENERAN EVENTOS EN LA GUI PRINCIPAL
         jButton1.addActionListener(OPrincipal);
         jButton2.addActionListener(OPrincipal);
         jButton3.addActionListener(OPrincipal);
