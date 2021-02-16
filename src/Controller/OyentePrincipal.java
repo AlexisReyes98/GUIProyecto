@@ -18,10 +18,7 @@ public class OyentePrincipal implements ActionListener{
     Principal p;
     JButton boton1, boton2, boton3;
     JTextField jTextField1;
-
-    public OyentePrincipal() {
-    }
-
+    
     public OyentePrincipal(GUIPrincipal guiPrincipal, JButton boton1, JButton boton2, JButton boton3, JTextField jTextField1) {
         this.guiPrincipal = guiPrincipal;
         this.boton1 = boton1;
