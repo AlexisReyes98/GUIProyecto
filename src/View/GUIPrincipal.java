@@ -45,7 +45,7 @@ public class GUIPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(51, 204, 0));
+        jButton1.setBackground(new java.awt.Color(51, 255, 51));
         jButton1.setText("Activar");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 100, -1, -1));
 
@@ -53,7 +53,7 @@ public class GUIPrincipal extends javax.swing.JFrame {
         jButton2.setText("Salir");
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, 70, 30));
 
-        jButton3.setBackground(new java.awt.Color(255, 0, 204));
+        jButton3.setBackground(new java.awt.Color(255, 51, 255));
         jButton3.setText("Ayuda");
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 230, 70, -1));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 100, -1));
@@ -62,7 +62,7 @@ public class GUIPrincipal extends javax.swing.JFrame {
         jLabel1.setText("***                                        Desea activar el detector                                           ***");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 420, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Images/f2.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Images/Fondo1.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 520, 350));
 
         pack();
