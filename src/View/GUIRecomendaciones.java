@@ -20,7 +20,7 @@ public class GUIRecomendaciones extends javax.swing.JFrame {
         setTitle("Ayuda");
         ORecomendaciones = new OyenteReco(this, jButton1, jButton2, jButton3, jTextArea1);
         //EL OBJETO "ORecomendaciones" ES REGISTRADO COMO OYENTE DE LOS TRES BOTONES
-        //QUE GENERAN EVENTOS EN LA GUI PRINCIPAL
+        //QUE GENERAN EVENTOS EN LA GUI Recomendaciones
         jButton1.addActionListener(ORecomendaciones);
         jButton2.addActionListener(ORecomendaciones);
         jButton3.addActionListener(ORecomendaciones);
