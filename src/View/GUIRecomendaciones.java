@@ -45,7 +45,7 @@ public class GUIRecomendaciones extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 204));
+        jButton1.setBackground(new java.awt.Color(51, 255, 255));
         jButton1.setText("Escuchar recomendaciones");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(116, 55, -1, -1));
 
@@ -63,7 +63,7 @@ public class GUIRecomendaciones extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 110, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Images/f1.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Images/Fondo1.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 300));
 
         pack();
